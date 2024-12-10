@@ -59,7 +59,7 @@ def create_tables() -> None:
     global __engine
 
     if not __engine:
-        create_engine(sqlite=True)
+        create_engine()  # sqlite=True
 
     import models.__all_models
 
